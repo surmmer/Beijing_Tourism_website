@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+}
+.none {
+    display: none;
+}
+
+/*让整个导航区 100%*/
+#header {
+    width: 100%;
+    min-width: 1280px;
+    height: 70px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 999;
+}
+
+/*内容区 固定大小*/
+#header .center {
+    width: 1263px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#header .logo {
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 230px;
+    background-size: contain;
+    text-indent: -9999px;
+    float: left;
+}
+
+
+/*导航样式*/
+.navbar {
+    position: absolute;
+    display: flex; /* 使用flexbox布局 */
+    justify-content: flex-end; /* 右对齐 */
+    align-items: center; /* 垂直居中 */
+    background-color: transparent;
+    right: 0;
+}
+
+
+#header .link {
+    width: 900px;
+    height: 70px;
+    float: right;
+    list-style: none;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#header .link li {
+    width: 120px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: #000000;
+    float: right;
+}
+
+#header .link a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+/*hover 过的样式*/
+#header .link a:hover {
+    border-top: 3px solid #ac3434;
+}
+
+
+/* end */
+
+.head {
+    width: 100%;
+    height: 123px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 20px 10px 10px #fbfbfb;
+    overflow: hidden; /* 清除浮动 */
+}
+
+.head .center {
+    width: 1400px;
+    height: auto;
+}
+
+.logo {
+    width: 230px;
+    float: left;
+    margin-right: 190px;
+    padding: 22px 0;
+}
+
+.logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    padding: 0;
+    height: 94px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    margin-right: -255px;
+    float: right;
+}
+
+.nav a {
+    color: #665e47;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.nav .nLi h3 a {
+    display: block;
+    padding: 40px 30px;
+    height: 18px;
+}
+
+.nav .on h3 a {
+    color: #665e47;
+}
+
+.nav .nLi {
+    float: left;
+    position: relative;
+    display: inline;
+    height: 98px;
+    box-sizing: border-box;
+    border-top: 3px solid #fff;
+}
+
+.nav .nLi h3 {
+    float: left;
+    padding: 0;
+    font-size: 19px;
+}
+
+.nav .nLi h3 a {
+    line-height: 18px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.nav li span {
+    display: none;
+    position: absolute;
+    background: url(https://r1.visitbeijing.com.cn/images/20200903170545/936e985163a4f1a0629cea891e2d586a.png) no-repeat center;
+    width: 10px;
+    height: 6px;
+    top: 83px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+#header .link li span {
+    display: none;
+    position: absolute;
+    background: url(https://r1.visitbeijing.com.cn/images/20200903170545/936e985163a4f1a0629cea891e2d586a.png) no-repeat center;
+    width: 10px;
+    height: 6px;
+    top: 86px;
+    left: 53.5%;
+    margin-left: -5px;
+}
+
+.nav .nLi:hover {
+    border-top: 3px solid #ac3434;
+    /*margin-top: -3px;*/
+}
+.nav .nLi:hover span  {
+    display: block;
+}
+.link li:hover span{
+    display: block;
+}
+#nav a:hover {
+    color: #ac3434;
+}
+#header a:hover {
+    color: #ac3434;
+}
+
+/*search区*/
+#search {
+    /*这个100%是为了放大浏览器时，能自适应*/
+    width: 100%;
+    /*这个最小宽度是，当缩小浏览器小于1263px时，能保持结构的完整性*/
+    min-width: 1263px;
+    height: 590px;
+    /*背景图，不重复，始终保持图片居中*/
+    /*首先，为了满足最小的1280分辨率，大图本身宽度必须大于1280，为主流分辨率一般小于1920
+    ，所以图片宽度为1920可以满足所有用户*/
+    background: url(https://r1.visitbeijing.com.cn/images/20210319151613/d5b7844b74f033fd3b69bdf34f2f1b63.png) no-repeat center;
+    /*为了定位搜索框，在搜索框中使用margin定位居中不行*/
+    position: relative;
+}
+
+/*遮罩层*/
+#search #mask {
+    width: 100%;
+    min-width: 1263px;
+    height: 590px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+/*搜索框*/
+#search .search {
+    width: 481px;
+    height: 52px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: -27px -296px;
+    border-radius: 30px 0 0 30px;
+    background-color: #fff;
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    border: 4px solid #003f72;
+    outline: none;
+}
+
+/*按钮*/
+#search .button {
+    box-sizing: border-box;
+    border: 4px solid #003f72;
+    border-left: none;
+    width: 90px;
+    /*button border向内扩展高度不变，可以设高*/
+    height: 60px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: -27px 206px;
+    border-radius: 0 30px 30px 0;
+    color: #003f72;
+    background-color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#search .button img {
+    padding-top: 5px;
+    padding-left: 22px;
+    width: 50%;
+}
+
+#search .button:hover {
+    /*background-color: #003f72;*/
+}
+
+/*尾*/
+#foot {
+    margin-top: 20px;
+    height: 280px;
+    background: url(https://r1.visitbeijing.com.cn/images/20200924194144/150b64fc052136366514e13889360bc7.jpg) no-repeat center;
+    background-size: cover; /*缩放以填充背景*/
+}
+
+.block ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.block ul li {
+    flex: 1 0 35%;
+    margin-left: -19px;
+}
+
+#foot .top {
+    height: 220px;
+    width: 1263px;
+    margin: 0 7%;
+    text-align: center;
+}
+
+#foot .bottom {
+    height: 58px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 58px;
+    border-top: 2px solid #7d3577;
+}
+
+#foot .bottom a {
+    font-family: 华文仿宋, serif;
+    font-weight: bold;
+    color: aliceblue;
+    display: inline-block;
+}
+
+#foot .block {
+    width: 472px;
+    height: 220px;
+    display: inline-block;
+    color: #ccc;
+    text-align: left;
+    /*不加这个下边给h2加内边距时会产生布局错乱，不知道这个是为啥*/
+    /*vertical-align属性只会在inline-block水平的元素上期作用*/
+    vertical-align: top;
+    float: left;
+}
+
+#foot h2 {
+    padding: 0px 358px 0px 0px;
+    font-size: 26px;
+    font-family: "Microsoft YaHei UI", serif;
+    font-weight: bolder;
+}
+
+#foot hr {
+
+    border: 2px solid #8b366d;
+    width: 634px;
+}
+
+#foot ul {
+    list-style: none;
+    font-size: 18px;
+    color: #777;
+    text-indent: 20px;
+    /*这个是2倍的意思*/
+    line-height: 2;
+}

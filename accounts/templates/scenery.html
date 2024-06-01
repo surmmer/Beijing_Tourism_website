@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="auto" content='spider'>
+    <meta charset="UTF-8">
+    <title>北京文旅</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/scenery.css">
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+<body>
+<div class="head clearfix">
+    <div class="center clearfix"><!-- 导航 -->
+        <div class="logo">
+            <a href="/">
+                <img src=/static/image/BejingTourism.png alt="BeijingTourismLogo"></a>
+        </div>
+        <ul id="nav" class="nav" style="display: block;">
+            <li class="nLi on">
+                <h3>
+                    <a href="/">登录</a>
+                </h3>
+                <span></span>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="/sign_up">注册</a>
+                </h3>
+                <span></span>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="/food">美食</a>
+                </h3>
+                <span></span>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="/scenery">风景欣赏</a>
+                </h3>
+                <span></span>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="/information">旅游资讯</a>
+                </h3>
+                <span></span>
+            </li>
+            <li class="nLi">
+                <h3>
+                    <a href="/index">首页</a>
+                </h3>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="banner">
+</div>
+<div class="container">
+    <h1>必去旅游景点</h1>
+    <hr>
+    <div class="slideshow">
+        <div id="slide">
+            <div class="item" style="background-image: url(/static/image/greatwall2.jpg);">
+                <div class="content">
+                    <div class="name">这里是标题</div>
+                    <div class="des">这里是一些描述，你可以写一些相关描述</div>
+                    <div class="icon_box">
+                        <lord-icon src="https://cdn.lordicon.com/vixtkkbk.json" trigger="hover" class="icon">
+                        </lord-icon>
+                    </div>
+                    <button>更多内容</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/static/image/Old_Summer_Palace.jpg);">
+                <div class="content">
+                    <div class="name">圆明园</div>
+                    <div class="des">圆明园建于清朝的大型皇家园林，
+                        建筑面积达16万平方米，约合5,200亩[1]一百五十余景，有“万园之园”之称。
+                    </div>
+                    <div class="icon_box">
+                        <lord-icon src="https://cdn.lordicon.com/vixtkkbk.json" trigger="hover" class="icon">
+                        </lord-icon>
+                    </div>
+                    <button>更多内容</button>
+                </div>
+            </div>
+            <div class="item"
+                 style="background-image: url(https://cdn.pixabay.com/photo/2020/05/28/07/27/forbidden-city-5230228_1280.jpg);">
+                <div class="content">
+                    <div class="name">这里是标题</div>
+                    <div class="des">这里是一些描述，你可以写一些相关描述</div>
+                    <div class="icon_box">
+                        <lord-icon src="https://cdn.lordicon.com/vixtkkbk.json" trigger="hover" class="icon">
+                        </lord-icon>
+                    </div>
+                    <button>更多内容</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/static/image/Temple.jpg);">
+                <div class="content">
+                    <div class="name">这里是标题</div>
+                    <div class="des">这里是一些描述，你可以写一些相关描述</div>
+                    <div class="icon_box">
+                        <lord-icon src="https://cdn.lordicon.com/vixtkkbk.json" trigger="hover" class="icon">
+                        </lord-icon>
+                    </div>
+                    <button>更多内容</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/static/image/The_Summer_Palace.jpg);">
+                <div class="content">
+                    <div class="name">这里是标题</div>
+                    <div class="des">这里是一些描述，你可以写一些相关描述</div>
+                    <div class="icon_box">
+                        <lord-icon src="https://cdn.lordicon.com/vixtkkbk.json" trigger="hover" class="icon">
+                        </lord-icon>
+                    </div>
+                    <button>更多内容</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="s_button"><</div>
+            <div class="s_button">></div>
+        </div>
+    </div>
+    <h1>
+        <span>
+        </span>
+    </h1>
+
+    <h1>风景展示</h1>
+    <hr>
+    <div class="shell_div">
+        <div class="shell">
+            <div class="box">
+                <img src="/static/image/News.png">
+                <span>Image</span>
+            </div>
+            <div class="box">
+                <img src="/static/image/image6.jpg">
+                <span>Image</span>
+            </div>
+            <div class="box">
+                <img src="/static/image/image2.jpg">
+                <span>Image</span>
+            </div>
+            <div class="box">
+                <img src="/static/image/image3.0.jpg">
+                <span>Image</span>
+            </div>
+            <div class="box">
+                <img src="/static/image/image4.jpg">
+                <span>Image</span>
+            </div>
+            <div class="box">
+                <img src="/static/image/image1.jpg">
+                <span>Image</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let _direction = true;
+    let _move = () => {
+        let lists = document.querySelectorAll(".item")
+        if (_direction) {
+            document.querySelector("#slide").appendChild(lists[0]);
+        } else {
+            document.querySelector("#slide").prepend(lists[lists.length - 1]);
+        }
+    }
+    let timer = setInterval(_move, 2500);
+    document.querySelector(".slideshow").addEventListener("mouseover", () => {
+        clearInterval(timer);
+    });
+    document.querySelector(".slideshow").addEventListener("mouseout", () => {
+        timer = setInterval(_move, 2500)
+    });
+    document.querySelectorAll(".s_button")[1].onclick = () => {
+        _direction = true;
+        _move();
+    }
+    document.querySelectorAll(".s_button")[0].onclick = () => {
+        _direction = false;
+        _move();
+    }
+</script>
+
+<footer id='foot'>
+    <div class="top">
+        <div class="block left ">
+            <h2>友情链接</h2>
+            <hr>
+            <ul>
+                <li>国家博物馆</li>
+                <li>国家图书馆</li>
+                <li>国家大剧院</li>
+                <li>故宫</li>
+            </ul>
+            <ul>
+                <li>慕田峪长城</li>
+                <li>北京旅游集散中心</li>
+                <li>中国电影博物馆</li>
+                <li>北方昆曲剧院</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <a>
+            北京文化旅游网 | www.beijing.com | 旅行经营许可证
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

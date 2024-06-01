@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url("https://r1.visitbeijing.com.cn/images/20200921180307/daaa411469998d2a1b1c1bd8a74aaebe.jpg") no-repeat center;
+    margin: 0 auto;
+    position: relative;
+}
+.CardBox {
+    position: relative;
+    height: 1000px;
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 45px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #003f72;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 26px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    height: 252px;
+    top: 150px;
+}
+.container .card .content h2{
+    font-size: 1.05em;
+    font-weight: 700;
+    color: var(--clr);
+}
+.container .card .content p{
+    color: #333;
+}
+.container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fafafa;
+    font-weight: 500;
+    text-decoration: 8px;
+    border-radius: 8px;
+
+}

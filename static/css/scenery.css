@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Alimama_DongFangDaKai_Regular";
+}
+
+.container {
+    /*width: 1650px;*/
+    /*height: 1200px;*/
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+    position: relative;
+    padding: 20px;
+}
+
+.banner {
+    width: 1920px;
+    height: 300px;
+    background: url("https://r1.visitbeijing.com.cn/images/20200927170127/e1f3382bbcd9cfb8f7d2e36875fcf25d.png") no-repeat center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 微软雅黑;
+    color: darkred;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.container hr {
+    border: none;
+    border-top: 8px solid #e53b3b;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 70px;
+}
+
+.slideshow {
+    width: 1200px;
+    height: 550px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    padding: 50px;
+    box-shadow: 0 30px 50px rgba(141, 141, 141, 0.92);
+}
+
+#slide {
+    width: max-content;
+    margin-top: 50px;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    background-position: 30%, 50%;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 65%;
+    /* transform: translateY(-50%); */
+    margin-top: -150px;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    transition: .5s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transform: translateY(0); */
+    margin-top: 0px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.item:nth-child(3) {
+    left: 60%;
+}
+
+.item:nth-child(4) {
+    left: calc(60% + 220px);
+}
+
+.item:nth-child(5) {
+    left: calc(60% + 440px);
+}
+
+.item .content {
+    width: 300px;
+    position: absolute;
+    left: 6%;
+    top: 80%;
+    transform: translateY(-50%);
+    font-family: "Alimama_DongFangDaKai_Regular";
+    color: #1185fd;
+    display: none;
+}
+
+.item .content button {
+    border-radius: 10px;
+    background-color: #dff9fb;
+    cursor: pointer;
+}
+
+.item:nth-child(2) .content {
+    display: block;
+}
+
+.item .name {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+.item .des {
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+}
+
+.item button {
+    padding: 10px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+
+@keyframes showcontent {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.buttons {
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    margin-left: -360px;
+    text-align: center;
+    left: 75%;
+}
+
+.s_button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: gray;
+    background-color: rgb(255, 255, 255, 0.3);
+    font-size: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #555;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.s_button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.icon {
+    width: 50px;
+    height: 50px
+}
+
+.icon_box {
+    position: absolute;
+    left: 35%;
+    bottom: -7%;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+}
+
+.shell_div {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.shell {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    margin: 10px;
+}
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 10px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.box > img {
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.box > sapn {
+    font: 200 45px "";
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    flex-basis: 40%;
+}
+
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}

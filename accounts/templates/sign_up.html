@@ -1,0 +1,89 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Document</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="/static/css/sign_up.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="/static/css/base.css">-->
+<!--    <style></style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container1">-->
+<!--        <div class="login-wrapper">-->
+<!--            <div class="header">Sign up</div>-->
+<!--            <div class="form-wrapper">-->
+<!--                <input type="text" id="username" name="username" placeholder="Username" class="input-item">-->
+<!--                <input type="password" id="password" name="password" placeholder="Password" class="input-item">-->
+<!--                <input type="email" id="email" name="email" placeholder="Email" class="input-item">-->
+<!--                <div class="btn1" onclick="login()">Continue</div>-->
+<!--            </div>-->
+<!--            <div class="msg" id="message">-->
+<!--                Already have an account?-->
+<!--                <a href="sign_in.html">Sign in </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="box2">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/sign_up.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <style></style>
+</head>
+<body>
+<div class="container1">
+    <div class="login-wrapper">
+        <div class="header">Sign Up</div>
+        <div class="form-wrapper">
+            <form method="POST" action="/sign_up/">
+                {% csrf_token %}
+                <input type="text" id="username" name="username" placeholder="Username" class="input-item">
+                <input type="password" id="password" name="password" placeholder="Password" class="input-item">
+                <input type="email" id="email" name="email" placeholder="Email" class="input-item">
+                <button type="submit" class="btn1 btn10">Continue</button>
+            </form>
+        </div>
+        <div class="msg" id="message">
+            Already have an account?
+            <a href="../sign_in/">Sign in</a>
+        </div>
+    </div>
+    <div class="box2"></div>
+</div>
+<div class="error-popup" id="errorPopup" style="display: none;">
+    <span id="errorMessage"></span>
+    <button style="" onclick="closeErrorPopup()">Close</button>
+</div>
+
+<script>
+        function showErrorPopup(message) {
+            document.getElementById("errorMessage").innerText = message;
+            document.getElementById("errorPopup").style.display = "block";
+        }
+
+        function closeErrorPopup() {
+            document.getElementById("errorPopup").style.display = "none";
+        }
+
+        // Check if 'error' query parameter exists in the URL and show the error popup
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        if (error) {
+            showErrorPopup(decodeURIComponent(error));
+        }
+
+</script>
+
+</body>
+</html>
+

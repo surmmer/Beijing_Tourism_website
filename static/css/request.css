@@ -1,0 +1,275 @@
+.area {
+    width: 1200px;
+    margin: 0 auto;
+}
+.banner1{
+    width: 1920px;
+    height: 650px;
+    background: url("https://www.dpm.org.cn/Uploads/Picture/2020/08/05/s5f2a7535e4f17.jpg") no-repeat center;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+}
+#fCut01 {
+    overflow: hidden;
+}
+
+#fCut01 .left {
+    float: left;
+    width: 815px;
+}
+
+#fCut01 .left h1 {
+    font-size: 12px;
+    font-weight: normal;
+    height: 52px;
+    line-height: 52px;
+    margin: 75px 0 30px;
+    position: relative;
+}
+
+#fCut01 .left h1:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 75px;
+    height: 2px;
+    background: #e5e5e5;
+}
+
+#fCut01 .left h1 a {
+    color: #b2b2b2;
+    padding: 0 2px;
+    font-size:18px;
+    font-weight: 300;
+}
+
+#fCut01 .left h1 a:last-child{
+    font-size: 28px;
+    color: #aa2b2b;
+}
+
+#fCut01 .left h1 span{
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    /*background: url(../images/span.png) no-repeat center;*/
+    margin: 0 9px;
+}
+
+.left .list14 {
+    width: 815px;
+    overflow: hidden;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+
+.item {
+    border-bottom: solid 1px #eee5e5;
+    padding: 0 0 35px 0;
+    margin-bottom: 35px;
+}
+
+.listItem {
+    padding: 0 70px;
+}
+
+.item .item_1 {
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.item .item_1 .t {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 700px;
+}
+
+.item_1 h3 a {
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.item_1 h3 a i{
+    font-size: 24px;
+    color: #ac3434;
+    font-style: italic;
+}
+
+.item_1 h3 a:hover {
+    color: #ac3434;
+    text-decoration: underline;
+}
+
+.item .item_1 .item_time {
+    float: right;
+    color: #937a7a;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+.item .item_2 {
+    margin-right: 25px;
+    overflow: hidden;
+    width: 230px;
+    float: left;
+}
+
+.item .item_2 img {
+    width: 100%;
+    height: 175px;
+}
+
+.item .item3_txt {
+    width: 100%;
+    float: left;
+    margin-left: 5px;
+}
+
+.item .item_3 p {
+    font-size: 20px;
+    color: #919191;
+    padding-top: 20px;
+}
+
+/**/
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#fCut01 .right {
+    margin-top: 52px;
+}
+
+#fCut01 .right .box3 {
+    font-size: 0;
+    margin-bottom: 20px;
+    color: #dc8f21;
+    height: 61px;
+    line-height: 24px;
+    background: url(//r1.visitbeijing.com.cn/images/20200921173450/ac6ada2daa365fdc5f74d647b0d06a1e.png) left center no-repeat;
+}
+
+#fCut01 .right .box4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #aa2b2b;
+    height: 27px;
+    padding-left: 17px;
+    line-height: 27px;
+    background: url(//r1.visitbeijing.com.cn/images/20200904150534/4ea9fa5cf1f75757251f75cba27e7f2b.jpg) left center no-repeat;
+}
+
+.pt {
+    line-height: 20px;
+    text-align: left;
+}
+
+#fCut01 .right .pt {
+    width: 312px;
+    margin-bottom: 37px;
+}
+
+#fCut01 .right .pt>div {
+    position: relative;
+}
+
+#fCut01 .right .pt div {
+    margin: 0px;
+    float: none;
+    overflow: hidden;
+}
+
+#fCut01 .right .pt img {
+    padding-top: 0;
+    width: 312px;
+    height: 175px;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+}
+
+#fCut01 .right .pt img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#fCut01 .right .pt .pt_text{
+    padding: 15px 27px 15px 23px;
+    background: #fafafa;
+}
+
+#fCut01 .right .pt h3,
+#fCut01 .right .pt p {
+    text-align: left;
+
+}
+
+#fCut01 .right .pt h3 {
+    position: relative;
+    font: bold 16px "Arial";
+    line-height: 24px;
+    color: #2a2a2a;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#fCut01 .right .pt .pt_text:after{
+    position: absolute;
+    content: '';
+    width:7px;
+    height:7px;
+    border-radius: 7px;
+    background: #919191;
+    left: 10px;
+    top: 23px;
+}
+
+#fCut01 .right .pt .pt_text:hover:after{
+    background: #a33711;
+}
+
+#fCut01 .right .pt p {
+    margin-top: 5px;
+    text-align: left;
+    font: 16px/18px "arial";
+    line-height: 22px;
+    display: block;
+    color: #919191;
+    text-decoration: underline;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#fCut01 .right .pt .pt_text:hover h3 a{
+    color:#a33711;
+}
+
+#fCut01 .right .pt .pt_text:hover p a{
+    color: #b47058;
+}
+
+#fCut01 .left .blockA .page {
+    padding: 40px 0;
+}
+
+#fCut01 .left .blockA .page p{
+    color:#434343;
+    font-size:18px;
+    text-align: justify;
+}

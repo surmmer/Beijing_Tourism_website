@@ -1,0 +1,148 @@
+
+
+
+/*旅行区*/
+
+#tour{
+	width:1263px;
+	height:auto;
+	margin:0px auto;
+}
+.center_bar{
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	background: url("https://r1.visitbeijing.com.cn/images/20201113150842/5c3197b0c0324c0b40c0f457f1e249a2.png") center center no-repeat;
+	background-size: cover;
+}
+h2{
+	font-size: 50px;
+	letter-spacing: 2px;
+	font-family: 华文仿宋, serif;
+	font-weight: 1000;
+	color: #003f72;
+	padding-top:35px;
+}
+/*图片介绍区*/
+#tour figure{
+	display: inline-block;
+	width: 380px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	margin:15px 12px;
+	padding:4px;
+	position: relative;
+}
+#tour figure img{
+	/*去掉图片与容器间的缝隙，具体为啥能去掉不知道*/
+	width: 385px;
+	height: 287px;
+	vertical-align: middle;
+}
+#tour figcaption{
+	color:#777;
+	font-size: 14px;
+	padding:7px 0 5px 0;
+	letter-spacing: 1px;
+}
+#tour .title{
+	color:#333;
+	font-style: normal;
+}
+#tour .sat{
+	float: right;
+	color:#999;
+	font-style: normal;
+	font-size: 14px;
+}
+#tour .price{
+	color:#f60;
+}
+#tour .price strong{
+	font-size: 20px;
+	letter-spacing:1px;
+}
+
+
+
+
+.center{
+	margin: 0 auto;
+    width: 1185px;
+}
+.center img{
+	margin-left: 18px;
+	height: 110px;
+}
+.con_1{
+	height: 764px;
+}
+h2{
+	height: 74px;
+    color: #636363;
+    text-align: center;
+ 	padding-top: 10px;
+    font: 36px/74px Hiragino Sans GB,Microsoft YaHei,SimHei,SimSun,sans-serif;
+}
+.con_1_ul{
+	width: 1188px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.con_1_ul .current{
+	box-shadow: 0px 0px 10px 1px #cccccc;
+}
+.con_1_ul li{
+	width: 275px;
+    height: 300px;
+	float: left;
+	margin: 10px 10px;
+	border: 1px solid #ececec;
+	overflow: hidden;
+	cursor: pointer;
+	transition: box-shadow 0.3s ease;
+}
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 设置阴影样式 */
+}
+
+.con_1_ul li .con_1_img{
+	width: 275px;
+    height: 185px;
+    overflow: hidden;
+}
+.con_1_ul li:hover img{
+	transform: scale(1.2);
+}
+.con_1_ul li img{
+	position: relative;
+    width: 275px;
+    height: 185px;
+    margin-left: 0;
+    transition: all 0.6s;
+}
+.con_1_ul li .mgs{
+	height: 115px;
+	padding: 0 19px 0 19px;
+
+}
+.con_1_ul li .mgs p{
+	margin-top: 14px;
+    height: 48px;
+    font-size: 16px;
+    overflow: hidden;
+    color: #323232;
+    transition:  all 1s;
+}
+
+.con_1_ul li .mgs span{
+	margin-top: 16px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+
+

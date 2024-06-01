@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="auto" content='spider'>
+    <meta charset="UTF-8">
+    <title>北京文旅</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+<!--body,nav,section需要标题大纲，一般nav是用来存放一组导航链接的,section一般不用来定义样式所以，header里用div.每个页面只有一个h1方便搜索引擎搜索-->
+<header id='header'>
+    <div class='center'>
+        <div class="logo">
+            <h1>北京文化旅游 </h1>
+        </div>
+        <nav style='overflow:hidden;'>
+            <h2 class="none">网站导航</h2>
+            <div class="navbar">
+                <ul class="link">
+                    <li><a href="#">首页</a><span></span></li>
+                    <li><a href="/information">旅游资讯</a><span></span></li>
+                    <li><a href="/scenery">风景欣赏</a><span></span></li>
+                    <li><a href="/food">美食</a><span></span></li>
+                    <li><a href="/sign_up">注册</a><span></span></li>
+                    <li><a href="http://127.0.0.1:8000/">登录</a><span></span></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="search">
+    <div id="mask"></div>
+    <!--搜索框-->
+    <div class="center">
+        <!--如果搜索框放在这里会透明-->
+    </div>
+    <input class="search" id="inp" type="text" placeholder='请输入旅游景点'/>
+    <button class="button">
+        <img src="/static/image/research.png" alt="搜索">
+    </button>
+    <!--鼠标滑过 遮罩层变色-->
+    <script type="text/javascript">
+        /*搜索框*/
+        var search = document.getElementById('inp');
+        var mask = document.getElementById('mask');
+        search.onfocus = opacity;
+        search.onblur = stop;
+
+        function opacity() {
+            mask.style.backgroundColor = 'rgba(0,0,0,.4)';
+        }
+
+        function stop() {
+            mask.style.backgroundColor = 'rgba(0,0,0,0)';
+        }
+    </script>
+</div>
+<section class='center_bar'>
+</section>
+<div class="con_1 center">
+    <h2 class="title">今日推荐</h2>
+    <ul class="con_1_ul">
+        <li onmouseover="showShadow()" onmouseout="hideShadow()">
+            <div class="con_1_img"><img src="/static/image/museum.jpg" alt="The Palace Summer"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/greatwall.jpg" alt="BaDaLing Great Wall"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/summer_palace.jpg" alt="The Summer Palace"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/greatwall2.jpg" alt="MuTianYu Great Wall"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/Temple.jpg" alt="Temple of Heaven"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/Tombs.jpg" alt="Ming Tombs"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/JinShan.jpg" alt="JinShan Park"></div>
+            <div class="mgs">
+                <p></p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+        <li>
+            <div class="con_1_img"><img src="/static/image/Confucius.jpg" alt="The Temple of Confucius"></div>
+            <div class="mgs">
+                <p>孔夫子</p>
+                <span>北京</span>
+                <span>Peking</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</div>
+<footer id='foot'>
+    <div class="top">
+        <div class="block left ">
+            <h2>友情链接</h2>
+            <hr>
+            <ul>
+                <li>国家博物馆</li>
+                <li>国家图书馆</li>
+                <li>国家大剧院</li>
+                <li>故宫</li>
+            </ul>
+            <ul>
+                <li>慕田峪长城</li>
+                <li>北京旅游集散中心</li>
+                <li>中国电影博物馆</li>
+                <li>北方昆曲剧院</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <a>
+            北京文化旅游网 | www.beijing.com | 旅行经营许可证
+        </a>
+    </div>
+</footer>
+<script>
+    function showShadow() {
+        var div = document.getElementById("myDiv");
+        div.classList.add("shadow"); // 添加 shadow 类
+    }
+
+    function hideShadow() {
+        var div = document.getElementById("myDiv");
+        div.classList.remove("shadow"); // 移除 shadow 类
+    }
+</script>
+</body>
+</html>
